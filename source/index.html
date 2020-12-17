@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Путешествие по Европе</title>
+<!--    <link rel="stylesheet" href="../build/css/style.css">-->
+    <link rel="stylesheet" href="css/style.css">
+<!--    <link href="source/fonts/opensanslight.woff2" rel="preload" as="font">-->
+<!--    <link href="source/fonts/opensans.woff2" rel="preload" as="font">-->
+<!--    <link href="source/fonts/opensansbold.woff2" rel="preload" as="font">-->
+  </head>
+  <body>
+      <header class="header">
+<!--      <div class="header__wrapper">-->
+        <nav class="main-nav">
+          <div class="main-nav__left-column">
+            <a class="main-nav__logo" href="#">
+              <svg class="main-nav__logo-img-mobile" width="58" height="22" viewBox="0 0 58 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M27.7339 0L22.0582 17.0732H17.7457L13.9289 5.51219L9.98817 17.0732H5.70045L0 0H4.1638L8.07976 12L12.1692 0H15.8869L19.8524 12.0976L23.8923 0H27.7339Z"
+                  fill="#141517"/>
+                <path
+                  d="M34.0886 3.7561C36.154 3.7561 37.7402 4.2439 38.8473 5.21951C39.9543 6.17886 40.5078 7.63414 40.5078 9.58536V17.0732H36.8893V15.439C36.1623 16.6585 34.8074 17.2683 32.8246 17.2683C31.8002 17.2683 30.9079 17.0976 30.1479 16.7561C29.4043 16.4146 28.8343 15.9431 28.4378 15.3415C28.0412 14.7398 27.8429 14.0569 27.8429 13.2927C27.8429 12.0732 28.3056 11.1138 29.2309 10.4146C30.1727 9.71545 31.6184 9.36585 33.5681 9.36585H36.6414C36.6414 8.53658 36.3853 7.90244 35.8731 7.46342C35.3609 7.00813 34.5926 6.78049 33.5681 6.78049C32.8577 6.78049 32.1554 6.89431 31.4615 7.12195C30.784 7.33333 30.2057 7.62602 29.7265 8L28.3386 5.34146C29.0656 4.8374 29.9331 4.44715 30.941 4.17073C31.9654 3.89431 33.0146 3.7561 34.0886 3.7561ZM33.7912 14.7073C34.4521 14.7073 35.0387 14.561 35.5509 14.2683C36.0631 13.9593 36.4266 13.5122 36.6414 12.9268V11.5854H33.9895C32.4033 11.5854 31.6102 12.0976 31.6102 13.122C31.6102 13.6098 31.8002 14 32.1802 14.2927C32.5768 14.5691 33.1138 14.7073 33.7912 14.7073Z"
+                  fill="#141517"/>
+                <path
+                  d="M57 3.95122L50.9774 17.878C50.366 19.3902 49.6059 20.4553 48.6972 21.0732C47.8049 21.6911 46.7227 22 45.4504 22C44.7564 22 44.0707 21.8943 43.3933 21.6829C42.7158 21.4715 42.1623 21.1789 41.7327 20.8049L43.1454 18.0976C43.4429 18.3577 43.7816 18.561 44.1616 18.7073C44.5582 18.8537 44.9465 18.9268 45.3265 18.9268C45.8552 18.9268 46.2848 18.7967 46.6153 18.5366C46.9457 18.2927 47.2432 17.878 47.5075 17.2927L47.5571 17.1707L41.7823 3.95122H45.7726L49.5151 12.8537L53.2823 3.95122H57Z"
+                  fill="#141517"/>
+                <path
+                  d="M57.0173 3.9502L50.9946 17.877C50.3833 19.3892 49.6232 20.4543 48.7145 21.0721C47.8222 21.69 46.74 21.999 45.4677 21.999C44.7737 21.999 44.088 21.8933 43.4106 21.6819C42.7331 21.4705 42.1796 21.1778 41.75 20.8039L43.1627 18.0965C43.4601 18.3567 43.7989 18.5599 44.1789 18.7063C44.5754 18.8526 44.9637 18.9258 45.3438 18.9258C45.8725 18.9258 46.3021 18.7957 46.6326 18.5356C46.963 18.2917 47.2604 17.877 47.5248 17.2917L47.5744 17.1697L49.5323 12.8526L53.2996 3.9502H57.0173Z"
+                  fill="#FE7865"/>
+              </svg>
+<!--              <svg width="44" height="18" viewBox="0 0 44 18" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                <path d="M21.4021 0.51123L17.0223 13.6865H13.6943L10.7489 4.76497L7.70783 13.6865H4.39901L0 0.51123H3.21319L6.23512 9.77158L9.39093 0.51123H12.2599L15.32 9.84687L18.4376 0.51123H21.4021Z" fill="#141517"/>-->
+<!--                <path d="M26.3061 3.40979C27.8999 3.40979 29.124 3.78623 29.9783 4.53911C30.8326 5.27943 31.2597 6.40247 31.2597 7.90822V13.6865H28.4673V12.4255C27.9063 13.3666 26.8607 13.8371 25.3306 13.8371C24.5401 13.8371 23.8515 13.7053 23.265 13.4418C22.6912 13.1783 22.2513 12.8144 21.9453 12.3502C21.6393 11.8859 21.4863 11.3589 21.4863 10.7691C21.4863 9.82805 21.8433 9.08772 22.5573 8.54816C23.2841 8.0086 24.3998 7.73882 25.9044 7.73882H28.276C28.276 7.09888 28.0784 6.60951 27.6831 6.27072C27.2879 5.91938 26.6949 5.7437 25.9044 5.7437C25.3561 5.7437 24.8142 5.83154 24.2787 6.00721C23.7559 6.17033 23.3096 6.3962 22.9399 6.6848L21.8688 4.63322C22.4298 4.24423 23.0992 3.94308 23.877 3.72977C24.6676 3.51645 25.4773 3.40979 26.3061 3.40979ZM26.0765 11.8608C26.5866 11.8608 27.0392 11.7479 27.4345 11.522C27.8298 11.2836 28.1103 10.9385 28.276 10.4868V9.45161H26.2295C25.0055 9.45161 24.3934 9.84687 24.3934 10.6374C24.3934 11.0138 24.5401 11.315 24.8333 11.5408C25.1394 11.7541 25.5538 11.8608 26.0765 11.8608Z" fill="#141517"/>-->
+<!--                <path d="M43.9867 3.56037L39.339 14.3076C38.8672 15.4746 38.2807 16.2965 37.5794 16.7733C36.8909 17.2501 36.0557 17.4885 35.0739 17.4885C34.5384 17.4885 34.0092 17.407 33.4864 17.2439C32.9636 17.0807 32.5365 16.8549 32.205 16.5663L33.2952 14.477C33.5247 14.6778 33.7861 14.8347 34.0793 14.9476C34.3853 15.0605 34.685 15.117 34.9783 15.117C35.3863 15.117 35.7178 15.0166 35.9728 14.8158C36.2278 14.6276 36.4573 14.3076 36.6614 13.8559L36.6996 13.7618L32.2432 3.56037H35.3225L38.2106 10.4303L41.1177 3.56037H43.9867Z" fill="#141517"/>-->
+<!--              </svg>-->
+
+            </a>
+          </div>
+          <div class="main-nav__right-column">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="#">О путешествии</a></li>
+              <li class="main-nav__item"><a href="#">Цены</a></li>
+            </ul>
+            <div class="main-nav__phone">
+              <span class="main-nav__phone-img">
+                <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.39635 6.62432C1.31179 5.42623 1.57753 4.24606 2.28114 3.29684C2.89115 2.43632 3.68536 1.96636 4.64264 1.69172C5.44893 1.4525 5.9774 1.74561 6.20992 2.64204C6.54211 3.98224 7.01622 5.3225 7.18836 6.73361C7.24271 7.35485 6.84108 8.23322 6.40623 8.6856C5.31608 9.75888 5.54257 10.5399 6.37 12.1643C6.62669 12.6881 7.03436 13.5934 7.82858 14.7919C8.65601 15.9992 9.09389 16.6472 10.1569 16.0975C11.3376 15.5035 12.1983 15.8855 13.0891 16.8444C13.6931 17.5369 14.3574 18.1318 14.9614 18.8243C15.8341 19.8542 15.7949 20.5641 15.1124 21.2915C13.8833 22.6309 11.854 23.0736 10.3441 22.1766C9.51064 21.6881 8.68018 21.0487 8.01884 20.303C5.10471 16.9825 3.00291 13.1212 1.73759 8.76321C1.53526 8.02654 1.44165 7.28104 1.39635 6.62432Z" stroke="#141517" stroke-width="2" stroke-miterlimit="10"/>
+                </svg>
+              </span>
+              <a class="main-nav__phone-number" href="tel:+749978468446">
+                +7 (499)-784-684-46
+              </a>
+            </div>
+            <button class="main-nav__toggle" type="button">
+              <span class="main-nav__toggle-line">
+
+              </span>
+              <span class="visually_hidden">
+                Открыть меню
+              </span>
+            </button>
+          </div>
+        </nav>
+<!--      </div>-->
+    </header>
+
+<!--    <main class="main">-->
+<!--      <div class="main__wrapper">-->
+<!--        <h1 class="visually_hidden">-->
+<!--          Магазин Дизайнерской мебели-->
+<!--        </h1>-->
+<!--        <section class="promo">-->
+<!--          <div class="promo__left-column">-->
+<!--            <h2 class="promo__heading">-->
+<!--              дизайнерская мебель-->
+<!--            </h2>-->
+<!--            <p class="promo__product">-->
+<!--              Кресло “Антиква”-->
+<!--            </p>-->
+<!--            <p class="promo__price">-->
+<!--              <span class="promo__price-old">-->
+<!--                $380-->
+<!--              </span>-->
+<!--              <span class="promo__price-new">-->
+<!--                <b>$240</b>-->
+<!--              </span>-->
+<!--            </p>-->
+<!--            <button class="promo__button button" type="button">-->
+<!--              купить-->
+<!--            </button>-->
+<!--          </div>-->
+<!--          <div class="promo__right-column">-->
+<!--            <img src="source/img/promo-bg-mini-light.png" alt="Фото дизайнерского кресла Антиква, которое сейчас продается значительно дешевле ввиду акции." width="439" height="442">-->
+<!--            <ul class="promo__switches">-->
+<!--              <li class="promo__switch promo__switch&#45;&#45;active">01</li>-->
+<!--              <li class="promo__switch">02</li>-->
+<!--              <li class="promo__switch">03</li>-->
+<!--              <li class="promo__switch">04</li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--        </section>-->
+<!--        <section class="novelties">-->
+<!--          <ul class="novelties__left-column">-->
+<!--            <li class="novelties__item-small">-->
+<!--              <h2 class="novelties__heading">-->
+<!--                НОВИНКИ-->
+<!--              </h2>-->
+<!--            </li>-->
+<!--            <li class="novelties__item-small">-->
+<!--              <img class="novelties__img-small" src="source/img/novelties-chair-getting-dark.png" alt="Предлагаемый товар" width="175" height="169">-->
+<!--              <p class="novelties__product">-->
+<!--                Стул «Смеркается»-->
+<!--              </p>-->
+<!--              <p class="novelties__price">-->
+<!--                $280-->
+<!--              </p>-->
+<!--            </li>-->
+<!--            <li class="novelties__item-small">-->
+<!--              <img class="novelties__img-small" src="source/img/novelties-chandelier-cloud.png" alt="Предлагаемый товар" width="202" height="226">-->
+<!--              <p class="novelties__product">-->
+<!--              </p>-->
+<!--              Люстра «Облако»-->
+<!--              <p class="novelties__price">-->
+<!--                $250-->
+<!--              </p>-->
+<!--            </li>-->
+<!--            <li class="novelties__item-small">-->
+<!--              <img class="novelties__img-small" src="source/img/novelties-tablet-creme-brulee.png" alt="Предлагаемый товар" width="270" height="198">-->
+<!--              <p class="novelties__product">-->
+<!--                Стол «Крем брюле»-->
+<!--              </p>-->
+<!--              <p class="novelties__price">-->
+<!--                $320-->
+<!--              </p>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--          <div class="novelties_right-column">-->
+<!--              <img class="novelties__img-small" src="source/img/novelties-office-chair-white-chocolate.png" alt="Предлагаемый товар" width="490" height="466">-->
+<!--              <p class="novelties__product">-->
+<!--                Стул офисный «Белый шоколад»-->
+<!--              </p>-->
+<!--              <p class="novelties__price">-->
+<!--                $120-->
+<!--              </p>-->
+<!--          </div>-->
+<!--        </section>-->
+<!--        <section class="reviews">-->
+<!--          <ul class="reviews__list">-->
+<!--            <li class="reviews__item">-->
+<!--              <blockquote>-->
+<!--                <img class="reviews__img" src="source/img/reviews-img.png" width="88" height="80" alt="Фото человека отсавившего отзыв">-->
+<!--                <cite class="reviews__heading">Елена Новикова</cite>-->
+<!--                  <p class="reviews__position">студентка</p>-->
+<!--                  <p class="reviews__text">«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</p>-->
+<!--              </blockquote>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--          <ul class="reviews__switches">-->
+<!--            <li>-->
+<!--              <button class="reviews__switch reviews__switch&#45;&#45;active" type="button" value="slider_first">-->
+<!--                <span class="visually_hidden">Слайд первый</span>-->
+<!--              </button>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <button class="reviews__switch" type="button" value="slider_second">-->
+<!--                <span class="visually_hidden">Слайд второй</span>-->
+<!--              </button>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <button class="reviews__switch" type="button" value="slider_third">-->
+<!--                <span class="visually_hidden">Слайд третий</span>-->
+<!--              </button>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <button class="reviews__switch" type="button" value="slider_fourth">-->
+<!--                <span class="visually_hidden">Слайд четвертый</span>-->
+<!--              </button>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </section>-->
+<!--        <section class="stock">-->
+<!--          <h2 class="stock__heading">последний шанс</h2>-->
+<!--          <ul class="stock__menu">-->
+<!--            <li class="stock__menu-item">-->
+<!--              <a class="stock__menu-list">-->
+<!--                Стулья-->
+<!--              </a>-->
+<!--            </li>-->
+<!--            <li class="stock__menu-item">-->
+<!--              <a class="stock__menu-list">-->
+<!--                Диваны-->
+<!--              </a>-->
+<!--            </li>-->
+<!--            <li class="stock__menu-item">-->
+<!--              <a class="stock__menu-list">-->
+<!--                Кресла-->
+<!--              </a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--          <ul class="stock__list">-->
+<!--            <li class="stock__item">-->
+<!--              <p class="stock__product-heading">-->
+<!--                Стул «Карамель»-->
+<!--              </p>-->
+<!--              <div class="stock__price">-->
+<!--                <p class="stock__price-new">-->
+<!--                  $195-->
+<!--                </p>-->
+<!--                <p class="stock__price-old">-->
+<!--                  <s>$245</s>-->
+<!--                </p>-->
+<!--              </div>-->
+<!--              <img class="stock__product-img" src="source/img/stock-chair-caramel.png" width="209" height="252" alt="Фотография стула «Карамель»">-->
+<!--              <button class="stock__button" type="button">купить</button>-->
+<!--            </li>-->
+<!--            <li class="stock__item">-->
+<!--              <p class="stock__product-heading">-->
+<!--                Стул «Облако»-->
+<!--              </p>-->
+<!--              <div class="stock__price">-->
+<!--                <p class="stock__price-new">-->
+<!--                  $200-->
+<!--                </p>-->
+<!--                <p class="stock__price-old">-->
+<!--                  <s>$250</s>-->
+<!--                </p>-->
+<!--              </div>-->
+<!--              <img class="stock__product-img" src="source/img/stock-chair-cloud.png" width="197" height="255" alt="Фотография стула «Облако»">-->
+<!--              <button class="stock__button" type="button">купить</button>-->
+<!--            </li>-->
+<!--            <li class="stock__item">-->
+<!--              <p class="stock__product-heading">-->
+<!--                Стул «Сова»-->
+<!--              </p>-->
+<!--              <div class="stock__price">-->
+<!--                <p class="stock__price-new">-->
+<!--                  $240-->
+<!--                </p>-->
+<!--                <p class="stock__price-old">-->
+<!--                  <s>$260</s>-->
+<!--                </p>-->
+<!--              </div>-->
+<!--              <img class="stock__product-img" src="source/img/stock-chair-own.png" width="167" height="246" alt="Фотография стула «Сова»">-->
+<!--              <button class="stock__button" type="button">купить</button>-->
+<!--            </li>-->
+<!--            <li class="stock__item">-->
+<!--              <p class="stock__product-heading">-->
+<!--                Стул «Мая»-->
+<!--              </p>-->
+<!--              <div class="stock__price">-->
+<!--                <p class="stock__price-new">-->
+<!--                  $280-->
+<!--                </p>-->
+<!--                <p class="stock__price-old">-->
+<!--                  <s>$330</s>-->
+<!--                </p>-->
+<!--              </div>-->
+<!--              <img class="stock__product-img" src="source/img/stock-chair-may.png" width="186" height="285" alt="Фотография стула «Мая»">-->
+<!--              <button class="stock__button" type="button">купить</button>-->
+<!--            </li>-->
+<!--            <li class="stock__item">-->
+<!--              <p class="stock__product-heading">-->
+<!--                Стул «Месси»-->
+<!--              </p>-->
+<!--              <div class="stock__price">-->
+<!--                <p class="stock__price-new">-->
+<!--                  $200-->
+<!--                </p>-->
+<!--                <p class="stock__price-old">-->
+<!--                  <s>$245</s>-->
+<!--                </p>-->
+<!--              </div>-->
+<!--              <img class="stock__product-img" src="source/img/stock-chair-messi.png" width="162" height="249" alt="Фотография стула «Месси»">-->
+<!--              <button class="stock__button" type="button">купить</button>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </section>-->
+<!--      </div>-->
+<!--    </main>-->
+<!--    <footer class="footer">-->
+<!--      <div class="footer__logo">-->
+<!--        <img src="source/img/main-nav__logo.png" alt="Дизайнерская мебель - логотип" width="20" height="20">-->
+<!--      </div>-->
+<!--      <ul class="info">-->
+<!--        <li class="info__item">-->
+<!--          <a class="info__link" href="#">-->
+<!--            доставка-->
+<!--          </a>-->
+<!--        </li>-->
+<!--        <li class="info__item">-->
+<!--          <a class="info__link" href="#">-->
+<!--            оплата-->
+<!--          </a>-->
+<!--        </li>-->
+<!--        <li class="info__item">-->
+<!--          <a class="info__link" href="#">-->
+<!--            контакты-->
+<!--          </a>-->
+<!--        </li>-->
+<!--        <li class="info__item">-->
+<!--          <a class="info__link" href="#">-->
+<!--            гарантии-->
+<!--          </a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--      <ul class="contacts">-->
+<!--        <li class="contacts__item">-->
+<!--          <address>-->
+<!--            <a class="contacts__link" href="tel:+74952052814">-->
+<!--              +7(495) 205-28-14-->
+<!--            </a>-->
+<!--          </address>-->
+<!--        </li>-->
+<!--        <li class="contacts__item">-->
+<!--          <address>-->
+<!--            <a class="contacts__link" href="mailto:callium@gmail.com">-->
+<!--              callium@gmail.com-->
+<!--            </a>-->
+<!--          </address>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </footer>-->
+  </body>
+</html>

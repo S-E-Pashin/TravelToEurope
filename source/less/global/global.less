@@ -1,0 +1,63 @@
+body {
+  width: 100%;
+  // margin: 0 auto;
+  //todo  Поменять шрифт на необходимый
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  //background-color: @bg_main_color;
+  background-color: #000000;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually_hidden:not(:active),
+input[type="checkbox"].visually_hidden,
+input[type="radio"].visually_hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+//// Комментирую для нахождения лучшего решения.
+//// @media (min-width: @tablet_width) {
+////   body {
+////     // margin: 0 auto;
+////     // width: auto;
+////   }
+//// }
+//
+//// @media (min-width: @desktop_width) {
+////   body {
+////     // margin: 0 auto;
+////     // width: 960px;
+////   }
+//// }
+//// //
