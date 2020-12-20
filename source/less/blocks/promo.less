@@ -1,3 +1,148 @@
 .promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 860px;
+  background-image: url("../img/bg-promo-Desc.jpg");
+  background-repeat: no-repeat;
+  //background-position: 0 0;
+  background-size: cover;
 
+  background-color: greenyellow;
 }
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 564px;
+  min-width: @desktop_min;
+  width: 80%;
+  max-width: @desktop_content;
+
+  //padding: 185px 0 0 0;
+
+  background-color: #7474f3;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    min-width: @tablet_min;
+    max-width: @tablet_max;
+    //min-height: 50px;
+  }
+
+  @media (max-width: @mobile_max) {
+    min-width: @mobile_min;
+    max-width: @mobile_max;
+    //min-height: 50px;
+  }
+}
+
+.promo__header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 24.6vw;
+  min-height: 159px;
+  margin: 0 0 30px 0;
+
+  background-color: #599321;
+}
+
+.promo__header {
+  //padding: 0;
+  margin: 0;
+  width: 24.6vw;
+  font-size: 55px;
+  line-height: 80px;
+  font-weight: 600;
+  text-align: left;
+  color: @bg_main_color;
+  //letter-spacing: 1px;
+}
+
+.promo__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 24.6vw;
+  min-height: 189px;
+  background-color: #d3c560;
+}
+
+.promo__text {
+  //display: flex;
+  //flex-direction: row;
+  //justify-content: space-between;
+  //align-items: center;
+  width: 20vw;
+  min-height: 76px;
+  //margin: 0 0 39px 0;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: left;
+
+  color: @bg_main_color;
+  background-color: #d66497;
+}
+
+.promo__text-merge {
+  white-space: nowrap;
+}
+
+.promo__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  min-height: 75px;
+  width: 17.7vw;
+  padding: 0 0 0 43px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  color: @bg_main_color;
+  text-transform: uppercase;
+
+  background-image: url("../img/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 35px top 28px;
+
+  background-color: #5ccb3d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
