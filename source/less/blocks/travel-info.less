@@ -2,7 +2,26 @@
   width: 17.1vw;
   min-height: 190px;
   letter-spacing: 1px;
-  background-color: rgba(97, 99, 238, 0.527);
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 94.5vw;
+    min-height: 154px;
+    margin: 30px 0 51px 0;
+    padding: 30px 0 0 0;
+    flex-grow: 1;
+  }
+
+  @media (max-width: @mobile_max) {
+    width: 91vw;
+    min-width: 291px;
+    max-width: @tablet_max;
+    min-height: 278px;
+    padding: 30px 0 0 0;
+  }
 }
 
 .travel-info__text {
@@ -14,6 +33,18 @@
   text-align: left;
   color: @text_second_color;
   letter-spacing: 1px;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    margin: 0;
+    width: 95vw;
+    max-width: 726px;
+    text-align: center;
+  }
+
+  @media (max-width: @mobile_max) {
+    text-align: center;
+    min-width: 291px;
+  }
 }
 
 .travel-info__text-merge {
