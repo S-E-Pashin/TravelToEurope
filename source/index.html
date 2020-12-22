@@ -150,13 +150,13 @@
           </div>
           <div class="tabs__review">
             <blockquote class="tabs__feedback-wrapper">
-            <h3 class="tabs__review-heading">Отзывы</h3>
+              <h3 class="tabs__review-heading">Отзывы</h3>
               <p class="tabs__feedback">
                 Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!
               </p>
               <div class="tabs__unit-wrapper">
                 <img class="tabs__review-img tabs__review-img-greece" src="img/tabs__review-img-greece.jpg" width="38" height="38" alt="Фото человека отсавившего отзыв">
-<!--                TODO Поправить изобрежение и обработать его скруглениями-->
+                <!--                TODO Поправить изобрежение и обработать его скруглениями-->
                 <cite class="tabs__unit">
                   Влада Голицина
                 </cite>
@@ -178,7 +178,7 @@
           </div>
           <div class="tabs__review">
             <blockquote class="tabs__feedback-wrapper">
-            <h3 class="review__heading">Отзывы</h3>
+              <h3 class="review__heading">Отзывы</h3>
               <p class="tabs__feedback">
 
               </p>
@@ -205,7 +205,7 @@
           </div>
           <div class="tabs__review">
             <blockquote class="tabs__feedback-wrapper">
-            <h3 class="review__heading">Отзывы</h3>
+              <h3 class="review__heading">Отзывы</h3>
               <p class="tabs__feedback">
 
               </p>
@@ -232,7 +232,7 @@
           </div>
           <div class="tabs__review">
             <blockquote class="tabs__feedback-wrapper">
-            <h3 class="review__heading">Отзывы</h3>
+              <h3 class="review__heading">Отзывы</h3>
               <p class="tabs__feedback">
 
               </p>
@@ -259,7 +259,7 @@
           </div>
           <div class="tabs__review">
             <blockquote class="tabs__feedback-wrapper">
-            <h3 class="review__heading">Отзывы</h3>
+              <h3 class="review__heading">Отзывы</h3>
               <p class="tabs__feedback">
 
               </p>
@@ -274,10 +274,118 @@
         </li>
       </ul>
     </section>
-<!--    <section class="prices">-->
-
-<!--    </section>-->
+    <section class="prices">
+      <div class="prices__info">
+        <div class="prices__info-wrapper">
+          <h2 class="prices__heading">
+            Цены
+          </h2>
+          <p class="prices__text">
+            Специально для Вас мы
+            разработали 2 пакета цен с
+            разными условиями, отталкиваясь
+            от Ваших потребностей и
+            возможностей. Выберите для себя
+            лучший вариант отпуска и
+            отдохните на все 100%!
+          </p>
+          <address class="prices__contact">
+            <h3 class="prices__title">
+              Свяжитесь с нами
+            </h3>
+            <a class="prices__link" href="tel:+7(499)78468446">
+              +7 (499) -784-684-46
+            </a>
+          </address>
+        </div>
+      </div>
+      <ul class="prices__cards">
+        <li class="prices__card">
+          <div class="prices__offer-wrapper">
+            <h4 class="prices__offer">
+              Комплексный
+            </h4>
+            <span class="prices__cost">
+              $1999
+            </span>
+          </div>
+          <p class="prices__subtitle">
+            Ознакомьтесь с перечнем того, что входит в данный пакет
+          </p>
+          <ul class="prices__services">
+            <li class="prices__service">
+              Разработанный маршрут с гидом группы
+            </li>
+            <li class="prices__service">
+              Перелет, трансфер и проживание в отелях
+            </li>
+            <li class="prices__service">
+              Завтраки, ужины в отелях и ланчи на природе
+            </li>
+            <li class="prices__service">
+              Экскурсии по удивительно красивым местам Европы
+            </li>
+          </ul>
+          <button class="prices__button" type="button">
+            купить тур сейчас
+          </button>
+        </li>
+        <li class="prices__card">
+          <div class="prices__offer-wrapper">
+            <h4 class="prices__offer">
+              Экономный
+            </h4>
+            <span class="prices__cost">
+              $1399
+            </span>
+          </div>
+          <p class="prices__subtitle">
+            Ознакомьтесь с перечнем того, что входит в данный пакет
+          </p>
+          <ul class="prices__services">
+            <li class="prices__service">
+              Разработанный маршрут с гидом группы
+            </li>
+            <li class="prices__service">
+              Перелет и трансфер
+            </li>
+            <li class="prices__service">
+              Проживание в хостелах при отелях
+            </li>
+            <li class="prices__service">
+              Только завтраки в отелях
+            </li>
+            <li class="prices__service">
+              Экскурсии по удивительно красивым местам Европы
+            </li>
+          </ul>
+          <button class="prices__button" type="button">
+            купить тур сейчас
+          </button>
+        </li>
+      </ul>
+    </section>
   </div>
+  <section class="form">
+    <div class="form__wrapper">
+      <h2 class="form__heading">
+        У Вас остались вопросы?
+      </h2>
+      <p class="form__text">
+        Оставьте свой номер или e-mail и мы свяжемся с Вами
+      </p>
+      <form class="form__message" method="post" action="https://echo.htmlacademy.ru">
+        <div class="form__inputs-wrapper">
+          <label for="form-id-tel" class="form__label visually_hidden">Поле для ввода телефона</label>
+          <input class="form__input form__input-tel" type="tel" name="form-name-tel" placeholder="+7  Введите 10 цифр номера"
+                 id="form-id-tel">
+          <label for="form-id-email" class="form__label visually_hidden">Поле для ввода электронной почты</label>
+          <input class="form__input form__input-email" type="email" name="form-name-email" placeholder="E-mail" id="form-id-email">
+        </div>
+        <button class="form__button-submit" type="submit">отправить</button>
+      </form>
+    </div>
+  </section>
 </main>
 <footer class="footer">
   <div class="footer__wrapper">

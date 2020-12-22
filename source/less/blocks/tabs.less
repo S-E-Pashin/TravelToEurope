@@ -280,12 +280,16 @@
 
 .tabs__review-heading {
   position: relative;
-  margin: 31px 0 0 0;
+  margin: 29px 0 0 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 500;
   text-align: left;
   color: @text_third_color;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    margin: 64px 0 0 0;
+  }
 
   @media (max-width: @mobile_max) {
     margin: 31px 0 0 0;
