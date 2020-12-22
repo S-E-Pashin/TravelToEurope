@@ -76,6 +76,23 @@
 //  // background-image: url("");
 //  // border: 1px solid @;
 //  // border-radius: 3px;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    //Планшет
+    min-width: @tablet_min;
+    max-width: @tablet_max;
+    //width: 768px;
+    //height: 4434.59px;
+    //min-height: 50px;
+  }
+
+  @media (max-width: @mobile_max) {
+    //Телефон
+    min-width: @mobile_min;
+    max-width: @mobile_max;
+    //height: 6334px;
+    //min-height: 50px;
+  }
 }
 
 
