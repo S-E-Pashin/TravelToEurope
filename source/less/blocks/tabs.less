@@ -1,0 +1,373 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 60.93vw;
+  min-height: 714px;
+  margin: 97px 0 0 0;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    width: 100%;
+  }
+
+  @media (max-width: @mobile_max) {
+    width: 100%;
+    margin: 38px 0 0 0;
+  }
+}
+
+.tabs__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  min-height: 38px;
+  border-bottom: 2px solid @text_third_color_30;
+  overflow: hidden;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    width: 93.93vw;
+    min-height: 41px;
+    padding: 0 0 0 12px;
+  }
+
+  @media (max-width: @mobile_max) {
+    width: 100%;
+    min-height: 41px;
+    padding: 0 0 0 12px;
+  }
+}
+
+.tabs__item {
+  margin: 0 5vw 0 0;
+  //todo Отступ в относительных единицах не работает из за этого выпадают ссылки на страны в списке. при умешьшении разрешения вьюпорта.
+  //margin: 0 96px 0 0;
+  //padding: 0 5vw 0 0;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    margin: 0 13vw 0 0;
+  }
+
+  @media (max-width: @mobile_max) {
+    margin: 0 32vw 0 0;
+  }
+}
+
+.tabs__link {
+  font-size: 20px;
+  line-height: 24.38px;
+  font-weight: 500;
+  text-align: center;
+  color: @text_third_color_30;
+}
+
+.tabs__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (max-width: @mobile_max) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.tabs__country {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 24.47vw;
+  min-height: 598px;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    min-height: 364px;
+  }
+
+  @media (max-width: @mobile_max) {
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    min-height: 364px;
+  }
+}
+
+.tabs__heading {
+  position: relative;
+  font-size: 55px;
+  line-height: 114px;
+  font-weight: 600;
+  text-align: center;
+  color: @text_third_color;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 600;
+    text-align: center;
+    color: @text_third_color;
+    margin: 33px 0 0 0;
+    padding: 0;
+  }
+
+  @media (max-width: @mobile_max) {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: @text_third_color;
+    margin: 23px 0 0 0;
+    padding: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 116px;
+    left: 0;
+    width: 175px;
+    height: 3px;
+    background-color: @bg_toggle_first;
+
+    @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+      display: none;
+    }
+
+    @media (max-width: @mobile_max) {
+      display: none;
+    }
+  }
+}
+
+.tabs__text {
+  width: 20.27vw;
+  min-height: 308px;
+  margin: 0;
+  padding: 0 0 12px 0;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  text-align: left;
+  color: @text_third_color;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    width: 99.27vw;
+    min-height: 168px;
+    padding: 20px 0 0 0;
+    text-align: center;
+  }
+
+  @media (max-width: @mobile_max) {
+    width: 96.27vw;
+    min-height: 168px;
+    padding: 20px 0 0 0;
+    text-align: center;
+  }
+}
+
+.tabs__button {
+  min-width: 250px;
+  min-height: 75px;
+  margin: 0 0 16px 0;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: @bg_main_color;
+  letter-spacing: 2px;
+  background-color: @bg_toggle_first;
+  border: none;
+  text-transform: uppercase;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    min-height: 50px;
+    margin: 19px 0 0 0;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+  }
+
+  @media (max-width: @mobile_max) {
+    min-width: 288px;
+    min-height: 50px;
+    margin: 19px 0 0 0;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+  }
+}
+
+.tabs__review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 36.45vw;
+  min-width: 380px;
+  min-height: 598px;
+  background-image: url("../img/tabs__card-greeceD.jpg");
+  background-repeat: no-repeat;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    min-height: 416px;
+    background-size: cover;
+  }
+
+  @media (max-width: @mobile_max) {
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    min-width: @mobile_min;
+    min-height: 416px;
+    margin: 0;
+    background-size: 100% 465px;
+  }
+}
+
+.tabs__feedback-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 382px;
+  height: 367px;
+  margin: 0;
+  padding: 0 0 0 30px;
+  background-color: @bg_main_color;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    min-height: 335px;
+  }
+
+  @media (max-width: @mobile_max) {
+    align-items: center;
+    width: 268px;
+    min-height: 397px;
+    margin: 100px 0 0 0;
+    padding: 0;
+  }
+}
+
+.tabs__review-heading {
+  position: relative;
+  margin: 31px 0 0 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 500;
+  text-align: left;
+  color: @text_third_color;
+
+  @media (max-width: @mobile_max) {
+    margin: 31px 0 0 0;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 47px;
+    left: 0;
+    width: 68px;
+    height: 2px;
+    background-color: @bg_toggle_first;
+
+    @media (max-width: @mobile_max) {
+      display: none;
+    }
+  }
+}
+
+.tabs__feedback {
+  width: 334px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  text-align: left;
+  color: @text_third_color;
+
+  @media (max-width: @mobile_max) {
+    width: 236px;
+    text-align: center;
+    padding: 15px 0 0 0;
+  }
+}
+
+.tabs__unit-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 205px;
+  height: 38px;
+  margin: 0 0 30px 0;
+
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    margin: 0;
+  }
+
+  @media (max-width: @mobile_max) {
+    margin: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 68px;
+  }
+}
+
+.tabs__unit {
+  padding: 0 0 0 16px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  text-align: center;
+  color: @text_third_color;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

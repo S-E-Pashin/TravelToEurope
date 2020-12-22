@@ -20,9 +20,9 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    // .pipe(postcss([
+    //   autoprefixer()
+    // ]))
     // .pipe(csso())/* Минификатор */
     // .pipe(rename("style.min.css"))
     .pipe(rename("style.css"))
@@ -104,9 +104,9 @@ gulp.task("clean", function () {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  "webp",
+  // "webp",
   "css",
-  "sprite",
+  // "sprite",
   "html"
 ));
 

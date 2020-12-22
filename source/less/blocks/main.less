@@ -1,12 +1,13 @@
 //
 .main {
-  height: 4673px;
-  background-color: #aeab95;
-//  display: flex;
-//  flex-direction: column;
-//  justify-content: start;
-//  align-items: center;
-//  width: 100%;
+  //height: 4673px;
+  //background-color: #aeab95;
+  //background-color: #cd3c21;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
 //  // max-width: ;
 //  // height: px;
 //  // margin-top: 0px;
@@ -33,8 +34,8 @@
     //Планшет
     min-width: @tablet_min;
     max-width: @tablet_max;
-    width: 768px;
-    height: 4434.59px;
+    //width: 768px;
+    //height: 4434.59px;
     //min-height: 50px;
   }
 
@@ -42,18 +43,19 @@
     //Телефон
     min-width: @mobile_min;
     max-width: @mobile_max;
-    height: 6334px;
+    //height: 6334px;
     //min-height: 50px;
   }
 }
 //
-//.main__wrapper {
-//  display: flex;
-//  flex-direction: column;
-//  justify-content: start;
-//  align-items: center;
-//  // width: px;
-//  min-width: @desktop_content_width;
+.main__tabs-prices-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+   width: 75.2vw;
+//  min-width: 1444px;
+//  min-width: 1444px;
 //  // height: px;
 //  // margin-top: 0px;
 //  // margin-right: 0px;
@@ -70,11 +72,30 @@
 //  // font-weight: 400;
 //  // text-align: center;
 //  // color: @;
-//  // background-color: lightsalmon;
+   background-color: lightsalmon;
 //  // background-image: url("");
 //  // border: 1px solid @;
 //  // border-radius: 3px;
-//}
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    //Планшет
+    min-width: @tablet_min;
+    max-width: @tablet_max;
+    //width: 768px;
+    //height: 4434.59px;
+    //min-height: 50px;
+  }
+
+  @media (max-width: @mobile_max) {
+    //Телефон
+    min-width: @mobile_min;
+    max-width: @mobile_max;
+    //height: 6334px;
+    //min-height: 50px;
+  }
+}
+
+
 //
 //// . {
 ////   // display: flex;
