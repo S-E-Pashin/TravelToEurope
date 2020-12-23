@@ -1,6 +1,7 @@
 .contacts {
   width: 17.7vw;
-  min-width: 287px;
+  //min-width: 287px;
+  min-width: 305px;
   min-height: 196px;
   border-right: 1px solid @border;
 
@@ -9,6 +10,7 @@
     max-width: 50%;
     min-height: 177px;
     border: none;
+    border-left: 1px solid @border;
   }
 
   @media (max-width: @mobile_max) {
@@ -25,7 +27,6 @@
 
 .contacts__heading {
   padding: 0 0 0 2.1vw;
-  letter-spacing: 1px;
 
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
     padding: 0 0 0 6.6vw;
@@ -107,13 +108,13 @@
   text-decoration: none;
 
   &-mail {
-
     span {
-      padding: 0 0 2px 0;
+      padding: 0 0 0 13px;
       font-size: 14px;
       line-height: 17px;
       font-weight: 400;
       text-decoration: underline;
+      letter-spacing: 0.1px;
     }
 
     &-first {
@@ -152,11 +153,12 @@
 
     @media (max-width: @tablet_max) and (min-width: @tablet_min) {
       padding: 6px 0 0 11px;
-      letter-spacing: 1px;
+      letter-spacing: 0;
     }
 
     @media (max-width: @mobile_max) {
-  margin: 0 6px 0 0;
+      margin: 5px 10px 0 0;
+      letter-spacing: 0;
     }
   }
 }
