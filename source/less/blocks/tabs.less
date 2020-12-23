@@ -18,6 +18,7 @@
 }
 
 .tabs__links {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -27,9 +28,19 @@
   list-style: none;
   width: 100%;
   min-height: 38px;
-  border-bottom: 2px solid @text_third_color_30;
+  //border-bottom: 2px solid @text_third_color_30;
   overflow: hidden;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 100%;
+    max-width: 899px;
+    height: 2px;
+    background-color: @text_third_color_30;
+  }
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
     width: 93.93vw;
     min-height: 41px;
@@ -45,9 +56,6 @@
 
 .tabs__item {
   margin: 0 5vw 0 0;
-  //todo Отступ в относительных единицах не работает из за этого выпадают ссылки на страны в списке. при умешьшении разрешения вьюпорта.
-  //margin: 0 96px 0 0;
-  //padding: 0 5vw 0 0;
 
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
     margin: 0 13vw 0 0;
@@ -232,8 +240,27 @@
   width: 36.45vw;
   min-width: 380px;
   min-height: 598px;
-  background-image: url("../img/tabs__card-greeceD.jpg");
   background-repeat: no-repeat;
+
+  &-greece {
+    background-image: url("../img/tabs__card-greeceD.jpg");
+  }
+
+  &-albania {
+    background-image: url("../img/bg-albania.jpg");
+  }
+
+  &-macedonia {
+    background-image: url("../img/bg-macedonia.jpg");
+  }
+
+  &-montenegro {
+    background-image: url("../img/bg-montenegro.jpg");
+  }
+
+  &-croatia {
+    background-image: url("../img/bg-croatia.jpg");
+  }
 
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
     justify-content: flex-end;
@@ -280,12 +307,16 @@
 
 .tabs__review-heading {
   position: relative;
-  margin: 31px 0 0 0;
+  margin: 29px 0 0 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 500;
   text-align: left;
   color: @text_third_color;
+
+  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    margin: 64px 0 0 0;
+  }
 
   @media (max-width: @mobile_max) {
     margin: 31px 0 0 0;

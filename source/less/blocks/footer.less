@@ -10,11 +10,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   min-width: @desktop_min;
   width: 80%;
   max-width: @desktop_content;
-  margin: 150px 0 0 0;
+  //margin: 150px 0 0 0;
+  margin: 170px 0 0 0;
   background-color: @bg_main_color;
 
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
@@ -26,10 +27,11 @@
 
   @media (max-width: @mobile_max) {
     flex-direction: column;
+    align-items: center;
     min-width: @mobile_min;
-    width: 100vw;
+    width: 100%;
     max-width: @mobile_max;
-    margin: 70px 0 0 0;
+    margin: 55px 0 0 0;
   }
 }
 
