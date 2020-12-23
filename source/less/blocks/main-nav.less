@@ -264,3 +264,35 @@
     display: none;
   }
 }
+
+.main-nav__phone-img {
+  fill: none;
+}
+
+.main-nav__item a {
+  &:hover {
+    //background-color: red;
+    color: @bg_toggle_first;
+  }
+}
+
+
+//.main-nav__phone a {
+//  &:hover {
+//    color: @bg_toggle_first;
+//
+//  }
+//}
+
+.main-nav__phone:hover {
+  .main-nav__phone-number {
+    color: @bg_toggle_first;
+  }
+  .main-nav__phone-img {
+    fill: @bg_toggle_first;
+  }
+}
+
+//.main-nav__phone:hover .main-nav__phone-img {
+//    fill: @bg_toggle_first;
+//  }

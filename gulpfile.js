@@ -20,12 +20,13 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
-    // .pipe(postcss([
-    //   autoprefixer()
-    // ]))
-    // .pipe(csso())/* Минификатор */
-    // .pipe(rename("style.min.css"))
     .pipe(rename("style.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());

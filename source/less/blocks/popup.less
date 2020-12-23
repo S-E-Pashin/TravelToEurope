@@ -17,7 +17,6 @@
   width: 37.91vw;
   min-height: 444px;
   background-color: @bg_third_color;
-
   background-image: url("../img/bg-popup.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -30,6 +29,7 @@
   align-items: center;
   width: 18.4vw;
 }
+
 .popup__heading {
   margin: 72px 0 0 0;
   font-size: 25px;
@@ -78,8 +78,11 @@
   letter-spacing: 2px;
   background-color: @bg_toggle_first;
   border: none;
-}
 
+  &:hover {
+    background-color: @bg_toggle_third;
+  }
+}
 
 .popup__confirmation {
   display: none;

@@ -218,7 +218,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
   background-color: @bg_main_color;
 
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
@@ -257,6 +256,17 @@
     width: 91.3vw;
     min-height: 614px;
     margin: 0 0 27px 0;
+  }
+
+  &:hover {
+    border: 2px solid @bg_toggle_first;
+    .prices__offer,
+    .prices__cost {
+      color: @bg_toggle_first;
+    }
+    .prices__service {
+      background-image: url("../img/marker-black.svg");
+    }
   }
 }
 
@@ -400,24 +410,21 @@
   border: none;
 
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
-    width: 100%;
+    width: 250px;
     min-height: 50px;
     font-size: 10px;
     line-height: 12px;
   }
 
   @media (max-width: @mobile_max) {
-    width: 100%;
+    width: 288px;
     min-height: 50px;
     margin: 17px 0 0 0;
     font-size: 10px;
     line-height: 12px;
   }
+
+  &:hover {
+    background-color: @bg_toggle_third;
+  }
 }
-
-
-
-
-
-
-
