@@ -28,7 +28,6 @@
   list-style: none;
   width: 100%;
   min-height: 38px;
-  //border-bottom: 2px solid @text_third_color_30;
   overflow: hidden;
 
   &::after {
@@ -215,6 +214,7 @@
   text-transform: uppercase;
 
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    width: 250px;
     min-height: 50px;
     margin: 19px 0 0 0;
     font-size: 10px;
@@ -223,12 +223,16 @@
   }
 
   @media (max-width: @mobile_max) {
-    min-width: 288px;
+    width: 288px;
     min-height: 50px;
     margin: 19px 0 0 0;
     font-size: 10px;
     line-height: 12px;
     font-weight: 500;
+  }
+
+  &:hover {
+    background-color: @bg_toggle_third;
   }
 }
 
