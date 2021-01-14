@@ -70,7 +70,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/{logo-*.svg,icon-*.svg}")
+  return gulp.src("source/img/{logo-*.svg,icon-*.svg,*.svg}")
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -107,7 +107,7 @@ gulp.task("build", gulp.series(
   "copy",
   // "webp",
   "css",
-  // "sprite",
+  "sprite",
   "html"
 ));
 
