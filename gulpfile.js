@@ -105,7 +105,7 @@ gulp.task("clean", function () {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  // "webp",
+  "webp",
   "css",
   "sprite",
   "html"
