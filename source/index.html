@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Путешествие по Европе</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <link href="fonts/montserrat-400.woff2" rel="preload" as="font">
-  <link href="fonts/montserrat-500.woff2" rel="preload" as="font">
-  <link href="fonts/montserrat-600.woff2" rel="preload" as="font">
-  <link href="fonts/montserrat-700.woff2" rel="preload" as="font">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="fonts/montserrat-400.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/montserrat-500.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/montserrat-600.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/montserrat-700.woff2" rel="preload" as="font" crossorigin="anonymous">
 </head>
 <body>
 <header class="header">
@@ -364,8 +364,7 @@
       <form class="form__message" method="post" action="https://echo.htmlacademy.ru">
         <div class="form__inputs-wrapper">
           <label for="form-id-tel" class="form__label visually_hidden">Поле для ввода телефона</label>
-          <input class="form__input form__input-tel" type="tel" name="form-name-tel" placeholder="+7  Введите 10 цифр номера"
-                 id="form-id-tel">
+          <input class="form__input form__input-tel" type="tel" name="form-name-tel" placeholder="+7  Введите 10 цифр номера" id="form-id-tel">
           <label for="form-id-email" class="form__label visually_hidden">Поле для ввода электронной почты</label>
           <input class="form__input form__input-email" type="email" name="form-name-email" placeholder="E-mail" id="form-id-email">
         </div>
@@ -494,12 +493,9 @@
       <h4 class="popup__heading">Купить тур</h4>
       <form class="popup__message" method="post" action="https://echo.htmlacademy.ru">
         <label for="popup-id-tel" class="popup__label visually_hidden">Поле для ввода телефона</label>
-        <input class="popup__input popup__input-tel" type="tel" name="popup-name-tel"
-               placeholder="+7  Введите 10 цифр номера"
-               id="popup-id-tel">
+        <input class="popup__input popup__input-tel" type="tel" name="popup-name-tel" placeholder="+7  Введите 10 цифр номера" id="popup-id-tel">
         <label for="popup-id-email" class="popup__label visually_hidden">Поле для ввода электронной почты</label>
-        <input class="popup__input popup__input-email" type="email" name="popup-name-email" placeholder="E-mail"
-               id="popup-id-email">
+        <input class="popup__input popup__input-email" type="email" name="popup-name-email" placeholder="E-mail" id="popup-id-email">
         <button class="popup__button-submit" type="submit">отправить</button>
       </form>
     </div>
@@ -515,5 +511,6 @@
     </p>
   </div>
 </div>
+<script src="js/bundle.js"></script><!--Пробую 2а типа не работает видимо потому что бандл не был пересоздан-->
 </body>
 </html>
