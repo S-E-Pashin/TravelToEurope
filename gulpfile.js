@@ -15,6 +15,43 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 
+var webpack = require('webpack');
+var gulpWebpack = require('gulp-webpack');
+var webpackConfig = require('./webpack.config.js');
+
+var webpackConfigDeveloper = require('./webpack/webpack.development.config.js');
+var webpackConfigProduction = require('./webpack/webpack.production.config.js');
+
+var webpackStream = require('webpack-stream');
+
+var paths = {
+  scripts: {
+    src: './source/js/*.js', /*Исходники*/
+    dest: './build/js/' /*Место назначения*/
+  }
+}
+
+gulp.task('webpack', function () {
+  return gulp.src(paths.scripts.src)
+    .pipe(webpackStream(webpackConfig, webpack))
+    .pipe(gulp.dest(paths.scripts.dest));
+});
+
+
+// webpack Без минификации js
+gulp.task('webpackDev', function () {
+  return gulp.src(paths.scripts.src)
+    .pipe(webpackStream(webpackConfigDeveloper, webpack))
+    .pipe(gulp.dest(paths.scripts.dest));
+});
+
+// webpack С минификацией js
+gulp.task('webpackProd', function () {
+  return gulp.src(paths.scripts.src)
+    .pipe(webpackStream(webpackConfigProduction, webpack))
+    .pipe(gulp.dest(paths.scripts.dest));
+});
+
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
@@ -39,7 +76,7 @@ gulp.task("server", function () {
   gulp.watch("source/less/**/*.less", gulp.series("css", "refresh"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
-  gulp.watch("source/js/**/*.js", gulp.series("html", "refresh"));
+  gulp.watch("source/js/**/*.js", gulp.series("html", "webpackDev", "refresh"));
 });
 
 gulp.task("refresh", function (done) {
@@ -111,6 +148,7 @@ gulp.task("build", gulp.series(
   "webp",
   "css",
   "sprite",
+  'webpackDev',
   "html"
 ));
 
@@ -118,5 +156,3 @@ gulp.task("start", gulp.series(
   "build",
   "server"
 ));
-
-// gulp.task("webpack", )

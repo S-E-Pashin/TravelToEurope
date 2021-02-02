@@ -1,16 +1,15 @@
-//Тот же продакшн но остается для короткого указания при необходимости и дальнейшего наполнения.
-const path = require("path")
+const path = require("path"); /*Для использования расширения path/пути к местоположнию данного файла*/
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   // entry: [
-  //   "./source/js/buy-tour.js",
+  //   "./source/js/buy-tour.js", /*Указано в файле gulpfile.ls*/
   //   "./source/js/buy-close.js"
   // ],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "build/js"), /*Указываю путь для сохранения файла с содержащимся в нем скомпилированным js кодом.*/
-    iife: true
+    iife: true /*Обертывание для автозапуска кода*/
   },
   devtool: false
 };
