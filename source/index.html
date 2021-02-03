@@ -126,7 +126,7 @@
             <p class="tabs__text">
               На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
             </p>
-            <button class="tabs__button">
+            <button class="tabs__button prices__button" type="button">
               купить тур сейчас
             </button>
           </div>
@@ -483,13 +483,13 @@
   </div>
 </footer>
 <div class="popup">
-  <div class="popup__buy">
+  <div class="popup__buy popup__window-js visually_hidden">
+    <button class="popup__close" type="button">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
     <div class="popup__buy-wrapper">
-      <button class="popup__close" type="button">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
       <h4 class="popup__heading">Купить тур</h4>
       <form class="popup__message" method="post" action="https://echo.htmlacademy.ru">
         <label for="popup-id-tel" class="popup__label visually_hidden">Поле для ввода телефона</label>
@@ -500,7 +500,7 @@
       </form>
     </div>
   </div>
-  <div class="popup__confirmation">
+  <div class="popup__confirmation popup__window-js visually_hidden">
     <button class="popup__close" type="button">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <use xlink:href="img/sprite.svg#icon-close"></use>

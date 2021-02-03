@@ -3,8 +3,8 @@ const path = require("path"); /*Для использования расшире
 module.exports = {
   mode: "development",
   // entry: [
-  //   "./source/js/buy-tour.js", /*Указано в файле gulpfile.ls*/
-  //   "./source/js/buy-close.js"
+  //   "./source/js/popup-open.js", /*Указано в файле gulpfile.ls*/
+  //   "./source/js/popup-close.js"
   // ],
   output: {
     filename: "bundle.js",

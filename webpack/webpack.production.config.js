@@ -5,8 +5,8 @@ const path = require("path")
   module.exports = {
     mode: 'production',
     // entry: [
-    //   "./source/js/buy-tour.js",
-    //   "./source/js/buy-close.js"
+    //   "./source/js/popup-open.js",
+    //   "./source/js/popup-close.js"
     // ],
     output: {
       filename: "bundle.js",
