@@ -1,7 +1,8 @@
 'use strict';
 //Скрытие попапов.
 
-var getDisabledPopup = function () { /*  Функция поочередно добавляющая класс visually_hidden в том случае если он отсутствует у данного элемента.   */
+//Скрытие всех попапов.
+var getDisabledPopupAll = function () { /*  Функция поочередно добавляющая класс visually_hidden в том случае если он отсутствует у данного элемента.   */
   var popupWindows = document.querySelectorAll('.popup__window-js');
   popupWindows.forEach(function (value) {
     if (value.classList.contains('visually_hidden') !== true) {
@@ -10,8 +11,6 @@ var getDisabledPopup = function () { /*  Функция поочередно д�
   });
 };
 
-getDisabledPopup();
-
 window.popupHide = {
-  getDisabledPopup: getDisabledPopup
+  getDisabledPopupAll: getDisabledPopupAll
 };
