@@ -7,4 +7,3 @@ var ifEscEvent = function (evt) {
 window.utils = {
   ifEscEvent: ifEscEvent
 };
-

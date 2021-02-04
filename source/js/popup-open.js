@@ -5,7 +5,6 @@ var buttonsActiveFirst = buttonPrices; /*Условное обозначение
 var buttonPressedClassFirst = 'prices__button'; /*Класс для фильтрации по нажимаемой кнопке.*/
 var popupShowFirst = document.querySelector('.popup__buy'); /*Первый попап для первой кнопки*/
 
-
 //Функция добавления слушателей на кнопки "Купить сейчас".
 var addButtonPricesListeners = function () {
   buttonsActiveFirst.forEach(function (value) {
@@ -38,17 +37,8 @@ var  removeButtonPricesListeners = function () {
   });
 }
 
+addButtonPricesListeners(); /*Слушатели для всех кнопок добавляются когда открывается страница.*/
+
 window.popupOpen = {
   addButtonPricesListeners :addButtonPricesListeners
 }
-
-
-
-
-
-
-addButtonPricesListeners(); /*Слушатели для всех кнопок добавляются когда открывается страница.*/
-
-// Слушатель снова присваивается кнопке:
-//По факту отправки формы
-// или же по факту закрытия данного попапа(для осуществления покупки)
