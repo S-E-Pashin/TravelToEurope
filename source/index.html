@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Путешествие по Европе</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <link href="source/fonts/montserrat-400.woff2" rel="preload" as="font">
-  <link href="source/fonts/montserrat-500.woff2" rel="preload" as="font">
-  <link href="source/fonts/montserrat-600.woff2" rel="preload" as="font">
-  <link href="source/fonts/montserrat-700.woff2" rel="preload" as="font">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="fonts/montserrat-400.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/montserrat-500.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/montserrat-600.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/montserrat-700.woff2" rel="preload" as="font" crossorigin="anonymous">
 </head>
 <body>
 <header class="header">
@@ -16,18 +16,7 @@
     <div class="main-nav__left-column">
       <a class="main-nav__logo" href="#">
         <svg class="main-nav__logo-img-mobile" width="58" height="22" viewBox="0 0 58 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M27.7339 0L22.0582 17.0732H17.7457L13.9289 5.51219L9.98817 17.0732H5.70045L0 0H4.1638L8.07976 12L12.1692 0H15.8869L19.8524 12.0976L23.8923 0H27.7339Z"
-            fill="#141517"/>
-          <path
-            d="M34.0886 3.7561C36.154 3.7561 37.7402 4.2439 38.8473 5.21951C39.9543 6.17886 40.5078 7.63414 40.5078 9.58536V17.0732H36.8893V15.439C36.1623 16.6585 34.8074 17.2683 32.8246 17.2683C31.8002 17.2683 30.9079 17.0976 30.1479 16.7561C29.4043 16.4146 28.8343 15.9431 28.4378 15.3415C28.0412 14.7398 27.8429 14.0569 27.8429 13.2927C27.8429 12.0732 28.3056 11.1138 29.2309 10.4146C30.1727 9.71545 31.6184 9.36585 33.5681 9.36585H36.6414C36.6414 8.53658 36.3853 7.90244 35.8731 7.46342C35.3609 7.00813 34.5926 6.78049 33.5681 6.78049C32.8577 6.78049 32.1554 6.89431 31.4615 7.12195C30.784 7.33333 30.2057 7.62602 29.7265 8L28.3386 5.34146C29.0656 4.8374 29.9331 4.44715 30.941 4.17073C31.9654 3.89431 33.0146 3.7561 34.0886 3.7561ZM33.7912 14.7073C34.4521 14.7073 35.0387 14.561 35.5509 14.2683C36.0631 13.9593 36.4266 13.5122 36.6414 12.9268V11.5854H33.9895C32.4033 11.5854 31.6102 12.0976 31.6102 13.122C31.6102 13.6098 31.8002 14 32.1802 14.2927C32.5768 14.5691 33.1138 14.7073 33.7912 14.7073Z"
-            fill="#141517"/>
-          <path
-            d="M57 3.95122L50.9774 17.878C50.366 19.3902 49.6059 20.4553 48.6972 21.0732C47.8049 21.6911 46.7227 22 45.4504 22C44.7564 22 44.0707 21.8943 43.3933 21.6829C42.7158 21.4715 42.1623 21.1789 41.7327 20.8049L43.1454 18.0976C43.4429 18.3577 43.7816 18.561 44.1616 18.7073C44.5582 18.8537 44.9465 18.9268 45.3265 18.9268C45.8552 18.9268 46.2848 18.7967 46.6153 18.5366C46.9457 18.2927 47.2432 17.878 47.5075 17.2927L47.5571 17.1707L41.7823 3.95122H45.7726L49.5151 12.8537L53.2823 3.95122H57Z"
-            fill="#141517"/>
-          <path
-            d="M57.0173 3.9502L50.9946 17.877C50.3833 19.3892 49.6232 20.4543 48.7145 21.0721C47.8222 21.69 46.74 21.999 45.4677 21.999C44.7737 21.999 44.088 21.8933 43.4106 21.6819C42.7331 21.4705 42.1796 21.1778 41.75 20.8039L43.1627 18.0965C43.4601 18.3567 43.7989 18.5599 44.1789 18.7063C44.5754 18.8526 44.9637 18.9258 45.3438 18.9258C45.8725 18.9258 46.3021 18.7957 46.6326 18.5356C46.963 18.2917 47.2604 17.877 47.5248 17.2917L47.5744 17.1697L49.5323 12.8526L53.2996 3.9502H57.0173Z"
-            fill="#FE7865"/>
+          <use xlink:href="img/sprite.svg#main-nav__logo-desktop"></use>
         </svg>
       </a>
     </div><!--main-nav__left-column&#45;&#45;nojs-->
@@ -39,7 +28,7 @@
       <div class="main-nav__phone">
               <span class="main-nav__phone-img">
                 <svg width="17" height="24" viewBox="0 0 17 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.39635 6.62432C1.31179 5.42623 1.57753 4.24606 2.28114 3.29684C2.89115 2.43632 3.68536 1.96636 4.64264 1.69172C5.44893 1.4525 5.9774 1.74561 6.20992 2.64204C6.54211 3.98224 7.01622 5.3225 7.18836 6.73361C7.24271 7.35485 6.84108 8.23322 6.40623 8.6856C5.31608 9.75888 5.54257 10.5399 6.37 12.1643C6.62669 12.6881 7.03436 13.5934 7.82858 14.7919C8.65601 15.9992 9.09389 16.6472 10.1569 16.0975C11.3376 15.5035 12.1983 15.8855 13.0891 16.8444C13.6931 17.5369 14.3574 18.1318 14.9614 18.8243C15.8341 19.8542 15.7949 20.5641 15.1124 21.2915C13.8833 22.6309 11.854 23.0736 10.3441 22.1766C9.51064 21.6881 8.68018 21.0487 8.01884 20.303C5.10471 16.9825 3.00291 13.1212 1.73759 8.76321C1.53526 8.02654 1.44165 7.28104 1.39635 6.62432Z" stroke="#141517" stroke-width="2" stroke-miterlimit="10"/>
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
               </span>
         <a class="main-nav__phone-number" href="tel:+749978468446">
@@ -137,7 +126,7 @@
             <p class="tabs__text">
               На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
             </p>
-            <button class="tabs__button">
+            <button class="tabs__button prices__button" type="button">
               купить тур сейчас
             </button>
           </div>
@@ -148,8 +137,10 @@
                 Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!
               </p>
               <div class="tabs__unit-wrapper">
-                <img class="tabs__review-img tabs__review-img-greece" src="img/tabs__review-img-greece.jpg" width="38" height="38" alt="Фото человека отсавившего отзыв">
-                <!--                TODO Поправить изобрежение и обработать его скруглениями-->
+                <picture>
+                  <source type="image/webp" srcset="img/tabs__review-img-greece.webp 1x">
+                  <img class="tabs__review-img tabs__review-img-greece" src="img/tabs__review-img-greece.jpg" width="38" height="38" alt="Фото человека отсавившего отзыв">
+                </picture>
                 <cite class="tabs__unit">
                   Влада Голицина
                 </cite>
@@ -176,7 +167,10 @@
                 Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)
               </p>
               <div class="tabs__unit-wrapper">
-                <img class="tabs__review-img" src="img/r-albania.png" width="38" height="38" alt="Фото человека отсавившего отзыв">
+                <picture>
+                  <source type="image/webp" srcset="img/r-albania.webp 1x">
+                  <img class="tabs__review-img tabs__review-img-greece" src="img/r-albania.jpg" width="38" height="38" alt="Фото человека отсавившего отзыв">
+                </picture>
                 <cite class="tabs__unit">
                   Маришка
                 </cite>
@@ -370,8 +364,7 @@
       <form class="form__message" method="post" action="https://echo.htmlacademy.ru">
         <div class="form__inputs-wrapper">
           <label for="form-id-tel" class="form__label visually_hidden">Поле для ввода телефона</label>
-          <input class="form__input form__input-tel" type="tel" name="form-name-tel" placeholder="+7  Введите 10 цифр номера"
-                 id="form-id-tel">
+          <input class="form__input form__input-tel" type="tel" name="form-name-tel" placeholder="+7  Введите 10 цифр номера" id="form-id-tel">
           <label for="form-id-email" class="form__label visually_hidden">Поле для ввода электронной почты</label>
           <input class="form__input form__input-email" type="email" name="form-name-email" placeholder="E-mail" id="form-id-email">
         </div>
@@ -454,7 +447,7 @@
         <li class="contacts__item contacts__item-mail">
             <span class="contacts__img contacts__img-mail">
               <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24.2273 0H1.77273C0.768182 0 0 0.764706 0 1.76471V18.2353C0 19.2353 0.768182 20 1.77273 20H24.2273C25.2318 20 26 19.2353 26 18.2353V1.76471C26 0.764706 25.2318 0 24.2273 0ZM24.2273 17L19.5591 12.3529C19.2045 12 18.6727 12 18.3182 12.3529C17.9636 12.7059 17.9636 13.2353 18.3182 13.5882L22.9864 18.2353H3.01362L7.68182 13.5882C8.03636 13.2353 8.03636 12.7059 7.68182 12.3529C7.32727 12 6.79547 12 6.44092 12.3529L1.77273 17V5.70585L12.4091 13.7059C12.5864 13.8236 12.7637 13.8823 12.9409 13.8823C13.1182 13.8823 13.2954 13.8236 13.4727 13.7059L24.2273 5.70585V17ZM24.2273 1.76471V3.4706L12.9409 11.8235L1.77273 3.4706V1.76471H24.2273Z" fill="#D7D9DF"/>
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
               </svg>
             </span>
           <a class="contacts__link contacts__link-mail" href="#">
@@ -465,7 +458,7 @@
         <li class="contacts__item contacts__item-phone">
             <span class="contacts__img contacts__img-phone">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.39635 8.62432C7.31179 7.42623 7.57753 6.24606 8.28114 5.29684C8.89115 4.43632 9.68536 3.96636 10.6426 3.69172C11.4489 3.4525 11.9774 3.74561 12.2099 4.64204C12.5421 5.98224 13.0162 7.3225 13.1884 8.73361C13.2427 9.35485 12.8411 10.2332 12.4062 10.6856C11.3161 11.7589 11.5426 12.5399 12.37 14.1643C12.6267 14.6881 13.0344 15.5934 13.8286 16.7919C14.656 17.9992 15.0939 18.6472 16.1569 18.0975C17.3376 17.5035 18.1983 17.8855 19.0891 18.8444C19.6931 19.5369 20.3574 20.1318 20.9614 20.8243C21.8341 21.8542 21.7949 22.5641 21.1124 23.2915C19.8833 24.6309 17.854 25.0736 16.3441 24.1766C15.5106 23.6881 14.6802 23.0487 14.0188 22.303C11.1047 18.9825 9.00291 15.1212 7.73759 10.7632C7.53526 10.0265 7.44165 9.28104 7.39635 8.62432Z" stroke="#D7D9DF" stroke-width="2" stroke-miterlimit="10"/>
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
             </span>
           <a class="contacts__link contacts__link-phone" href="#">
@@ -490,37 +483,34 @@
   </div>
 </footer>
 <div class="popup">
-  <div class="popup__buy">
+  <div class="popup__buy popup__window-js visually_hidden">
+    <button class="popup__close" type="button">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
     <div class="popup__buy-wrapper">
-      <button class="popup__close" type="button">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 23L23 1M23 23L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
       <h4 class="popup__heading">Купить тур</h4>
       <form class="popup__message" method="post" action="https://echo.htmlacademy.ru">
         <label for="popup-id-tel" class="popup__label visually_hidden">Поле для ввода телефона</label>
-        <input class="popup__input popup__input-tel" type="tel" name="popup-name-tel"
-               placeholder="+7  Введите 10 цифр номера"
-               id="popup-id-tel">
+        <input class="popup__input popup__input-tel" type="tel" name="popup-name-tel" placeholder="+7  Введите 10 цифр номера" id="popup-id-tel">
         <label for="popup-id-email" class="popup__label visually_hidden">Поле для ввода электронной почты</label>
-        <input class="popup__input popup__input-email" type="email" name="popup-name-email" placeholder="E-mail"
-               id="popup-id-email">
+        <input class="popup__input popup__input-email" type="email" name="popup-name-email" placeholder="E-mail" id="popup-id-email">
         <button class="popup__button-submit" type="submit">отправить</button>
       </form>
     </div>
   </div>
-  <div class="popup__confirmation">
+  <div class="popup__confirmation popup__window-js visually_hidden">
     <button class="popup__close" type="button">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 23L23 1M23 23L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <use xlink:href="img/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <p class="popup__info">
       Форма успешно отправлена, спасибо! :)
     </p>
   </div>
-
 </div>
+<script src="js/bundle.js"></script><!--Пробую 2а типа не работает видимо потому что бандл не был пересоздан-->
 </body>
 </html>
