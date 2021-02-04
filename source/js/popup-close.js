@@ -1,5 +1,5 @@
 'use strict';
-
+// Закрытие попапа/ов
 var buttonsPopupClose = document.querySelectorAll('.popup__close');
 var buttonsCloseFirst = buttonsPopupClose;
 
