@@ -364,9 +364,9 @@
       <form class="form__message" method="post" action="https://echo.htmlacademy.ru">
         <div class="form__inputs-wrapper">
           <label for="form-id-tel" class="form__label visually_hidden">Поле для ввода телефона</label>
-          <input class="form__input form__input-tel" type="tel" name="form-name-tel" placeholder="+7  Введите 10 цифр номера" id="form-id-tel">
+          <input class="form__input form__input-tel" type="tel" name="form-name-tel" placeholder="+7  Введите 10 цифр номера" id="form-id-tel" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
           <label for="form-id-email" class="form__label visually_hidden">Поле для ввода электронной почты</label>
-          <input class="form__input form__input-email" type="email" name="form-name-email" placeholder="E-mail" id="form-id-email">
+          <input class="form__input form__input-email" type="email" name="form-name-email" placeholder="E-mail" id="form-id-email" required>
         </div>
         <button class="form__button-submit" type="submit">отправить</button>
       </form>

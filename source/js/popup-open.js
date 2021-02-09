@@ -1,9 +1,18 @@
 'use strict';
 
 var buttonPrices = document.querySelectorAll('.prices__button');
+
 var buttonsActiveFirst = buttonPrices; /*Условное обозначение кнопки для унификации*/
 var buttonPressedClassFirst = 'prices__button'; /*Класс для фильтрации по нажимаемой кнопке.*/
+
 var popupShowFirst = document.querySelector('.popup__buy'); /*Первый попап для первой кнопки*/
+
+// var buttonsActiveSecond = window.form.formField;
+// var buttonPressedClassSecond = window.form.buttonSubmitClass; /*Класс для фильтрации по нажимаемой кнопке.*/
+// var popupShowSecond = window.form.popupSuccesSubmit; /* 2 попап для 2 кнопки*/
+
+
+
 
 //Функция добавления слушателей на кнопки "Купить сейчас".
 var addButtonPricesListeners = function () {
@@ -40,5 +49,5 @@ var  removeButtonPricesListeners = function () {
 addButtonPricesListeners(); /*Слушатели для всех кнопок добавляются когда открывается страница.*/
 
 window.popupOpen = {
-  addButtonPricesListeners :addButtonPricesListeners
+  // addButtonPricesListeners :addButtonPricesListeners
 }
