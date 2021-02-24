@@ -493,9 +493,9 @@
       <h4 class="popup__heading">Купить тур</h4>
       <form class="popup__message" method="post" action="https://echo.htmlacademy.ru">
         <label for="popup-id-tel" class="popup__label visually_hidden">Поле для ввода телефона</label>
-        <input class="popup__input popup__input-tel" type="tel" name="popup-name-tel" placeholder="+7  Введите 10 цифр номера" id="popup-id-tel">
+        <input class="popup__input popup__input-tel" type="tel" name="popup-name-tel" placeholder="+7  Введите 10 цифр номера" id="popup-id-tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
         <label for="popup-id-email" class="popup__label visually_hidden">Поле для ввода электронной почты</label>
-        <input class="popup__input popup__input-email" type="email" name="popup-name-email" placeholder="E-mail" id="popup-id-email">
+        <input class="popup__input popup__input-email" type="email" name="popup-name-email" placeholder="E-mail" id="popup-id-email" required>
         <button class="popup__button-submit" type="submit">отправить</button>
       </form>
     </div>
