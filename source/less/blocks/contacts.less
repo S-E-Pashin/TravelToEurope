@@ -1,6 +1,7 @@
 .contacts {
   width: 17.7vw;
   min-width: 305px;
+  max-width: 340px;
   min-height: 196px;
   border-right: 1px solid @border;
 
@@ -25,8 +26,6 @@
 }
 
 .contacts__heading {
-  padding: 0 0 0 2.1vw;
-
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
     padding: 0 0 0 6.6vw;
   }
@@ -44,6 +43,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
+  max-width: 338px;
   min-height: 69px;
   margin: 20px 0 0 0;
   list-style: none;
@@ -64,22 +64,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 14.2vw;
+  max-width: 273px;
+  min-width: 247px;
+  stroke: #D7D9DF;
 
-  &-mail {
-    width: 11.2vw;
-    @media (max-width: @mobile_max) {
-      width: 30vw;
-      min-width: 96px;
-    }
-  }
-
-  &-phone {
-    min-width: 10.8vw;
-    stroke: #D7D9DF;
-    @media (max-width: @mobile_max) {
-      width: 68vw;
-      min-width: 217px;
-    }
+  @media (max-width: @mobile_max) {
+    min-width: 217px;
   }
 }
 

@@ -1,5 +1,7 @@
 .travel-info {
   width: 17.1vw;
+  max-width: 329px;
+  min-width: 320px;
   min-height: 190px;
   letter-spacing: 1px;
 
@@ -9,7 +11,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 94.5vw;
+    max-width: 100%;
     min-height: 154px;
     margin: 30px 0 51px 0;
     padding: 30px 0 0 0;
@@ -18,7 +20,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 0px;
+      top: 0;
       left: 20px;
       width: 727px;
       height: 2px;
@@ -27,20 +29,29 @@
   }
 
   @media (max-width: @mobile_max) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 91vw;
-    min-width: 291px;
     max-width: @tablet_max;
-    min-height: 278px;
+    min-height: 150px;
     padding: 30px 0 0 0;
   }
 }
 
 .travel-info__heading {
   letter-spacing: 0.1px;
+
+  @media (max-width: @mobile_max) {
+    margin-bottom: 20px;
+  }
 }
 
 .travel-info__text {
   width: 17vw;
+  max-width: 327px;
+  min-width: 319px;
   margin: 20px 0 0 0;
   padding: 0;
   font-size: 14px;
@@ -50,9 +61,9 @@
   color: @text_second_color;
   letter-spacing: 0.1px;
 
-  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+  @media (max-width: @tablet_max) {
     margin: 0;
-    width: 95vw;
+    width: 88vw;
     max-width: 726px;
     text-align: center;
   }
@@ -60,6 +71,7 @@
   @media (max-width: @mobile_max) {
     text-align: center;
     min-width: 291px;
+    margin-bottom: 50px;
   }
 }
 

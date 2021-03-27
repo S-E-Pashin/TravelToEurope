@@ -22,13 +22,11 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  min-height: 1297px;
 
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
     align-items: center;
     min-width: @tablet_min;
     max-width: @tablet_max;
-    min-height: 1566px;
     margin: 0;
   }
 
@@ -43,16 +41,22 @@
 .place__heading {
   align-self: flex-start;
   width: 18.64vw;
-  margin: 0 0 0 30px;
+  min-width: 340px;
+  margin: 0 0 36px 30px;
   font-size: 55px;
   line-height: 80px;
   font-weight: 600;
   text-align: left;
 
+  @media (max-width: 1230px) {
+    align-self: center;
+    width: 535px;
+  }
+
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
     align-self: center;
     width: 39vw;
-    margin: 80px 0 0 0;
+    margin: 80px 0 26px 0;
     font-size: 30px;
     line-height: 45px;
     font-weight: 600;
@@ -62,6 +66,7 @@
   @media (max-width: @mobile_max) {
     align-self: center;
     width: 73vw;
+    min-width: 310px;
     margin: 0;
     font-size: 24px;
     line-height: 36px;
@@ -78,7 +83,7 @@
     height: 4px;
     background-color: @bg_toggle_first;
 
-    @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+    @media (max-width: 1230px) and (min-width: @tablet_min) {
       display: none;
     }
 
@@ -91,17 +96,19 @@
 .place__text {
   align-self: flex-start;
   width: 18.64vw;
-  margin: 0 0 0 30px;
+  min-width: 350px;
+  margin: 0 0 20px 30px;
   padding: 5px 0 0 0;
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
   text-align: left;
 
-  @media (max-width: @tablet_max) and (min-width: @tablet_min) {
+  @media (max-width: 1230px) and (min-width: @tablet_min) {
     align-self: center;
-    width: 45.6vw;
-    margin: 0;
+    width: 53.6vw;
+    max-width: 586px;
+    margin: 0 0 20px 0;
     padding: 0 0 18px 0;
     text-align: center;
   }
@@ -109,6 +116,8 @@
   @media (max-width: @mobile_max) {
     align-self: center;
     width: 95vw;
+    min-width: 310px;
+    max-width: 570px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -201,10 +210,14 @@
     background-image: url("../img/place__item-croatia-Desc.jpg");
   }
 
+  @media (max-width: 1230px) and (min-width: @tablet_max) {
+    margin: 30px 0 20px 30px;
+  }
+
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
     min-width: 288px;
     min-height: 425px;
-    margin: 0 auto;
+    margin: 30px 0 20px 30px;
   }
 
   @media (max-width: @tablet_max) {
@@ -230,7 +243,6 @@
     }
   }
 }
-
 
 .place__country {
   display: flex;

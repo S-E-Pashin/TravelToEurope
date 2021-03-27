@@ -1,9 +1,9 @@
 .prices {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  width: 60.93vw;
+  width: 100%;
   margin: 240px 0 0 0;
 
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
@@ -29,6 +29,7 @@
   justify-content: start;
   align-items: flex-end;
   width: 20.83vw;
+  min-width: 310px;
   min-height: 672px;
 
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
@@ -49,7 +50,8 @@
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
-  width: 15.57vw;
+  width: 19vw;
+  min-width: 300px;
   margin: 112px 0 0 0;
 
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
@@ -112,6 +114,7 @@
 
 .prices__text {
   width: 16.57vw;
+  min-width: 275px;
   margin: 48px 0 0 0;
   padding: 0 0 0 10px;
   font-size: 16px;
@@ -177,6 +180,7 @@
 
 .prices__link {
   position: relative;
+  min-width: 265px;
   margin: 0;
   padding: 0 0 0 54px;
   font-size: 20px;
@@ -215,6 +219,7 @@
   justify-content: space-between;
   align-items: start;
   width: 40.1vw;
+  min-width: 708px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -230,6 +235,7 @@
     justify-content: start;
     align-items: center;
     width: 100%;
+    min-width: 320px;
     margin: 40px 0 0 0;
   }
 }
@@ -240,7 +246,7 @@
   justify-content: start;
   align-items: center;
   width: 19.27vw;
-  min-width: 233px;
+  min-width: 353px;
   overflow: hidden;
   min-height: 672px;
   border: 1px solid @text_third_color_30;
@@ -254,6 +260,7 @@
   @media (max-width: @mobile_max) {
     justify-content: space-between;
     width: 91.3vw;
+    min-width: 320px;
     min-height: 614px;
     margin: 0 0 27px 0;
   }
@@ -277,6 +284,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 16.1vw;
+  min-width: 300px;
   margin: 40px 0 0 0;
 
   @media (max-width: @tablet_max) and (min-width: @tablet_min) {
@@ -325,6 +333,7 @@
 
 .prices__subtitle {
   width: 15.1vw;
+  min-width: 270px;
   margin: 38px 1.09vw 0 0;
   font-size: 16px;
   line-height: 24px;
@@ -372,6 +381,7 @@
 .prices__service {
   position: relative;
   width: 13.9vw;
+  min-width: 270px;
   margin: 0 0 15px 0;
   padding: 0 0 0 30px;
   font-size: 16px;

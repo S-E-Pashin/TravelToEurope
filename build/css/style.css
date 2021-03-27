@@ -69,6 +69,7 @@ input[type="radio"].visually_hidden {
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-width: 320px;
 }
 .main-nav {
   display: flex;
@@ -76,8 +77,8 @@ input[type="radio"].visually_hidden {
   justify-content: space-between;
   align-items: center;
   min-height: 99px;
-  min-width: 1024px;
-  width: 80%;
+  min-width: 1000px;
+  width: 95%;
   max-width: 1170px;
   background-color: #ffffff;
 }
@@ -96,6 +97,9 @@ input[type="radio"].visually_hidden {
   }
 }
 @media (max-width: 1023px) {
+  .main-nav {
+    width: 100%;
+  }
   .main-nav--nojs {
     flex-direction: column;
     min-height: 568px;
@@ -362,7 +366,7 @@ input[type="radio"].visually_hidden {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  width: 75.2vw;
+  width: 100%;
   background-image: url("../img/bg-main__tabs-prices-wrapper.svg");
   background-repeat: no-repeat;
   background-position: 0 231px;
@@ -485,7 +489,6 @@ input[type="radio"].visually_hidden {
 }
 .promo__header {
   margin: 0;
-  min-width: 24.6vw;
   font-size: 55px;
   line-height: 80px;
   font-weight: 600;
@@ -516,6 +519,7 @@ input[type="radio"].visually_hidden {
   justify-content: space-between;
   align-items: start;
   width: 24.6vw;
+  min-width: 400px;
   min-height: 189px;
 }
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -536,6 +540,7 @@ input[type="radio"].visually_hidden {
 }
 .promo__text {
   width: 20vw;
+  min-width: 400px;
   min-height: 76px;
   margin: 0;
   font-size: 16px;
@@ -553,7 +558,8 @@ input[type="radio"].visually_hidden {
 @media (max-width: 767px) {
   .promo__text {
     color: #2c2e3f;
-    width: 283px;
+    width: 79vw;
+    min-width: 310px;
     text-align: center;
   }
 }
@@ -567,8 +573,8 @@ input[type="radio"].visually_hidden {
   align-items: center;
   min-height: 75px;
   width: 17.7vw;
-  min-width: 196px;
-  padding: 0 0 0 2.23vw;
+  min-width: 210px;
+  padding: 0 0 0 25px;
   font-size: 12px;
   line-height: 14px;
   font-weight: 700;
@@ -586,7 +592,6 @@ input[type="radio"].visually_hidden {
   .promo__button {
     min-height: 50px;
     width: 250px;
-    padding: 0 0 0 5.23vw;
     font-size: 10px;
     line-height: 12px;
     font-weight: 500;
@@ -596,7 +601,6 @@ input[type="radio"].visually_hidden {
 @media (max-width: 767px) {
   .promo__button {
     width: 288px;
-    padding: 0 0 0 12.23vw;
     min-height: 50px;
     font-size: 10px;
     line-height: 12px;
@@ -629,14 +633,12 @@ input[type="radio"].visually_hidden {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  min-height: 1297px;
 }
 @media (max-width: 1023px) and (min-width: 768px) {
   .place__wrapper {
     align-items: center;
     min-width: 768px;
     max-width: 1023px;
-    min-height: 1566px;
     margin: 0;
   }
 }
@@ -651,17 +653,24 @@ input[type="radio"].visually_hidden {
 .place__heading {
   align-self: flex-start;
   width: 18.64vw;
-  margin: 0 0 0 30px;
+  min-width: 340px;
+  margin: 0 0 36px 30px;
   font-size: 55px;
   line-height: 80px;
   font-weight: 600;
   text-align: left;
 }
+@media (max-width: 1230px) {
+  .place__heading {
+    align-self: center;
+    width: 535px;
+  }
+}
 @media (max-width: 1023px) and (min-width: 768px) {
   .place__heading {
     align-self: center;
     width: 39vw;
-    margin: 80px 0 0 0;
+    margin: 80px 0 26px 0;
     font-size: 30px;
     line-height: 45px;
     font-weight: 600;
@@ -672,6 +681,7 @@ input[type="radio"].visually_hidden {
   .place__heading {
     align-self: center;
     width: 73vw;
+    min-width: 310px;
     margin: 0;
     font-size: 24px;
     line-height: 36px;
@@ -688,7 +698,7 @@ input[type="radio"].visually_hidden {
   height: 4px;
   background-color: #fe7865;
 }
-@media (max-width: 1023px) and (min-width: 768px) {
+@media (max-width: 1230px) and (min-width: 768px) {
   .place__heading::after {
     display: none;
   }
@@ -701,18 +711,20 @@ input[type="radio"].visually_hidden {
 .place__text {
   align-self: flex-start;
   width: 18.64vw;
-  margin: 0 0 0 30px;
+  min-width: 350px;
+  margin: 0 0 20px 30px;
   padding: 5px 0 0 0;
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
   text-align: left;
 }
-@media (max-width: 1023px) and (min-width: 768px) {
+@media (max-width: 1230px) and (min-width: 768px) {
   .place__text {
     align-self: center;
-    width: 45.6vw;
-    margin: 0;
+    width: 53.6vw;
+    max-width: 586px;
+    margin: 0 0 20px 0;
     padding: 0 0 18px 0;
     text-align: center;
   }
@@ -721,6 +733,8 @@ input[type="radio"].visually_hidden {
   .place__text {
     align-self: center;
     width: 95vw;
+    min-width: 310px;
+    max-width: 570px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -807,11 +821,16 @@ input[type="radio"].visually_hidden {
 .place__item-croatia {
   background-image: url("../img/place__item-croatia-Desc.jpg");
 }
+@media (max-width: 1230px) and (min-width: 1023px) {
+  .place__item {
+    margin: 30px 0 20px 30px;
+  }
+}
 @media (max-width: 1023px) and (min-width: 768px) {
   .place__item {
     min-width: 288px;
     min-height: 425px;
-    margin: 0 auto;
+    margin: 30px 0 20px 30px;
   }
 }
 @media (max-width: 1023px) {
@@ -854,6 +873,7 @@ input[type="radio"].visually_hidden {
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-width: 320px;
 }
 .footer__wrapper {
   display: flex;
@@ -885,6 +905,7 @@ input[type="radio"].visually_hidden {
   }
 }
 .footer__section-heading {
+  padding: 0 0 0 20px;
   font-size: 18px;
   line-height: 32px;
   font-weight: 600;
@@ -896,7 +917,9 @@ input[type="radio"].visually_hidden {
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  min-width: 21vw;
+  width: 21vw;
+  max-width: 403px;
+  min-width: 323px;
   min-height: 195px;
   border-right: 1px solid #d7d9df;
 }
@@ -905,7 +928,6 @@ input[type="radio"].visually_hidden {
     width: 54.16vw;
     max-width: 50%;
     min-height: 177px;
-    padding: 0 0 0 2.7vw;
     margin: 0;
     border: none;
   }
@@ -913,13 +935,13 @@ input[type="radio"].visually_hidden {
 @media (max-width: 767px) {
   .trips {
     align-items: center;
-    width: 78.8vw;
+    width: 100%;
     min-width: 250px;
     border: none;
   }
 }
 .trips__heading {
-  min-width: 13.5vw;
+  width: 265px;
   padding: 0 0 0 0.7vw;
 }
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -929,9 +951,10 @@ input[type="radio"].visually_hidden {
 }
 @media (max-width: 767px) {
   .trips__heading {
-    width: 80vw;
+    width: 100%;
     min-width: 250px;
     padding: 0;
+    text-align: center;
   }
 }
 .trips__block {
@@ -940,6 +963,8 @@ input[type="radio"].visually_hidden {
   justify-content: space-between;
   align-items: center;
   width: 18.6vw;
+  min-width: 310px;
+  max-width: 358px;
   margin: 0 0 0 0.75vw;
   padding: 0 0 19px 0;
   list-style: none;
@@ -956,8 +981,8 @@ input[type="radio"].visually_hidden {
   .trips__block {
     align-content: space-between;
     flex-wrap: wrap;
-    min-width: 250px;
-    width: 77.8vw;
+    min-width: 252px;
+    width: 68vw;
     min-height: 286px;
     margin: 22px 0 0 0;
   }
@@ -968,10 +993,8 @@ input[type="radio"].visually_hidden {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 33vw;
+    width: 23vw;
     min-width: 98px;
-  }
-  .trips__column:last-child {
     flex-grow: 1;
   }
 }
@@ -989,7 +1012,6 @@ input[type="radio"].visually_hidden {
   .trips__list {
     align-items: center;
     flex-grow: 1;
-    width: 33vw;
     min-width: 98px;
     max-width: 384px;
   }
@@ -1005,6 +1027,7 @@ input[type="radio"].visually_hidden {
 .contacts {
   width: 17.7vw;
   min-width: 305px;
+  max-width: 340px;
   min-height: 196px;
   border-right: 1px solid #d7d9df;
 }
@@ -1029,9 +1052,6 @@ input[type="radio"].visually_hidden {
     border-bottom: 1 px solid #d7d9df;
   }
 }
-.contacts__heading {
-  padding: 0 0 0 2.1vw;
-}
 @media (max-width: 1023px) and (min-width: 768px) {
   .contacts__heading {
     padding: 0 0 0 6.6vw;
@@ -1050,6 +1070,7 @@ input[type="radio"].visually_hidden {
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
+  max-width: 338px;
   min-height: 69px;
   margin: 20px 0 0 0;
   list-style: none;
@@ -1071,23 +1092,13 @@ input[type="radio"].visually_hidden {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.contacts__item-mail {
-  width: 11.2vw;
-}
-@media (max-width: 767px) {
-  .contacts__item-mail {
-    width: 30vw;
-    min-width: 96px;
-  }
-}
-.contacts__item-phone {
-  min-width: 10.8vw;
+  width: 14.2vw;
+  max-width: 273px;
+  min-width: 247px;
   stroke: #D7D9DF;
 }
 @media (max-width: 767px) {
-  .contacts__item-phone {
-    width: 68vw;
+  .contacts__item {
     min-width: 217px;
   }
 }
@@ -1161,6 +1172,8 @@ input[type="radio"].visually_hidden {
 }
 .travel-info {
   width: 17.1vw;
+  max-width: 329px;
+  min-width: 320px;
   min-height: 190px;
   letter-spacing: 1px;
 }
@@ -1171,7 +1184,7 @@ input[type="radio"].visually_hidden {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 94.5vw;
+    max-width: 100%;
     min-height: 154px;
     margin: 30px 0 51px 0;
     padding: 30px 0 0 0;
@@ -1180,7 +1193,7 @@ input[type="radio"].visually_hidden {
   .travel-info::after {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 20px;
     width: 727px;
     height: 2px;
@@ -1189,18 +1202,28 @@ input[type="radio"].visually_hidden {
 }
 @media (max-width: 767px) {
   .travel-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 91vw;
-    min-width: 291px;
     max-width: 1023px;
-    min-height: 278px;
+    min-height: 150px;
     padding: 30px 0 0 0;
   }
 }
 .travel-info__heading {
   letter-spacing: 0.1px;
 }
+@media (max-width: 767px) {
+  .travel-info__heading {
+    margin-bottom: 20px;
+  }
+}
 .travel-info__text {
   width: 17vw;
+  max-width: 327px;
+  min-width: 319px;
   margin: 20px 0 0 0;
   padding: 0;
   font-size: 14px;
@@ -1210,10 +1233,10 @@ input[type="radio"].visually_hidden {
   color: rgba(20, 21, 23, 0.5);
   letter-spacing: 0.1px;
 }
-@media (max-width: 1023px) and (min-width: 768px) {
+@media (max-width: 1023px) {
   .travel-info__text {
     margin: 0;
-    width: 95vw;
+    width: 88vw;
     max-width: 726px;
     text-align: center;
   }
@@ -1222,6 +1245,7 @@ input[type="radio"].visually_hidden {
   .travel-info__text {
     text-align: center;
     min-width: 291px;
+    margin-bottom: 50px;
   }
 }
 .travel-info__text-merge {
@@ -1233,12 +1257,18 @@ input[type="radio"].visually_hidden {
   justify-content: space-between;
   align-items: center;
   width: 60.93vw;
+  min-width: 1024px;
   min-height: 714px;
   margin: 97px 0 0 0;
 }
+@media (max-width: 1023px) {
+  .tabs {
+    min-width: 320px;
+  }
+}
 @media (max-width: 1023px) and (min-width: 768px) {
   .tabs {
-    width: 100%;
+    width: fit-content;
   }
 }
 @media (max-width: 767px) {
@@ -1251,9 +1281,9 @@ input[type="radio"].visually_hidden {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   align-items: start;
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0;
   list-style: none;
   width: 100%;
@@ -1266,7 +1296,6 @@ input[type="radio"].visually_hidden {
   top: 32px;
   left: 0;
   width: 100%;
-  max-width: 899px;
   height: 2px;
   background-color: rgba(44, 46, 63, 0.3);
 }
@@ -1285,7 +1314,8 @@ input[type="radio"].visually_hidden {
   }
 }
 .tabs__item {
-  margin: 0 5vw 0 0;
+  padding: 0 10px;
+  margin: 5px;
 }
 @media (max-width: 1023px) and (min-width: 768px) {
   .tabs__item {
@@ -1317,6 +1347,7 @@ input[type="radio"].visually_hidden {
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
+  min-width: 796px;
 }
 @media (max-width: 1023px) and (min-width: 768px) {
   .tabs__card {
@@ -1330,6 +1361,7 @@ input[type="radio"].visually_hidden {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    min-width: 310px;
   }
 }
 .tabs__country {
@@ -1338,6 +1370,7 @@ input[type="radio"].visually_hidden {
   justify-content: space-between;
   align-items: start;
   width: 24.47vw;
+  min-width: 410px;
   min-height: 598px;
 }
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -1353,6 +1386,7 @@ input[type="radio"].visually_hidden {
     justify-content: start;
     align-items: center;
     width: 100%;
+    min-width: 310px;
     min-height: 364px;
   }
 }
@@ -1363,7 +1397,7 @@ input[type="radio"].visually_hidden {
   font-weight: 600;
   text-align: center;
   color: #2c2e3f;
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0;
 }
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -1409,6 +1443,7 @@ input[type="radio"].visually_hidden {
 }
 .tabs__text {
   width: 20.27vw;
+  min-width: 400px;
   min-height: 308px;
   margin: 0;
   padding: 0 0 12px 0;
@@ -1429,6 +1464,7 @@ input[type="radio"].visually_hidden {
 @media (max-width: 767px) {
   .tabs__text {
     width: 96.27vw;
+    min-width: 310px;
     min-height: 168px;
     padding: 20px 0 0 0;
     text-align: center;
@@ -1627,9 +1663,9 @@ input[type="radio"].visually_hidden {
 .prices {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  width: 60.93vw;
+  width: 100%;
   margin: 240px 0 0 0;
 }
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -1656,6 +1692,7 @@ input[type="radio"].visually_hidden {
   justify-content: start;
   align-items: flex-end;
   width: 20.83vw;
+  min-width: 310px;
   min-height: 672px;
 }
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -1677,7 +1714,8 @@ input[type="radio"].visually_hidden {
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
-  width: 15.57vw;
+  width: 19vw;
+  min-width: 300px;
   margin: 112px 0 0 0;
 }
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -1743,6 +1781,7 @@ input[type="radio"].visually_hidden {
 }
 .prices__text {
   width: 16.57vw;
+  min-width: 275px;
   margin: 48px 0 0 0;
   padding: 0 0 0 10px;
   font-size: 16px;
@@ -1811,6 +1850,7 @@ input[type="radio"].visually_hidden {
 }
 .prices__link {
   position: relative;
+  min-width: 265px;
   margin: 0;
   padding: 0 0 0 54px;
   font-size: 20px;
@@ -1850,6 +1890,7 @@ input[type="radio"].visually_hidden {
   justify-content: space-between;
   align-items: start;
   width: 40.1vw;
+  min-width: 708px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1867,6 +1908,7 @@ input[type="radio"].visually_hidden {
     justify-content: start;
     align-items: center;
     width: 100%;
+    min-width: 320px;
     margin: 40px 0 0 0;
   }
 }
@@ -1876,7 +1918,7 @@ input[type="radio"].visually_hidden {
   justify-content: start;
   align-items: center;
   width: 19.27vw;
-  min-width: 233px;
+  min-width: 353px;
   overflow: hidden;
   min-height: 672px;
   border: 1px solid rgba(44, 46, 63, 0.3);
@@ -1892,6 +1934,7 @@ input[type="radio"].visually_hidden {
   .prices__card {
     justify-content: space-between;
     width: 91.3vw;
+    min-width: 320px;
     min-height: 614px;
     margin: 0 0 27px 0;
   }
@@ -1913,6 +1956,7 @@ input[type="radio"].visually_hidden {
   align-items: center;
   flex-wrap: wrap;
   width: 16.1vw;
+  min-width: 300px;
   margin: 40px 0 0 0;
 }
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -1962,6 +2006,7 @@ input[type="radio"].visually_hidden {
 }
 .prices__subtitle {
   width: 15.1vw;
+  min-width: 270px;
   margin: 38px 1.09vw 0 0;
   font-size: 16px;
   line-height: 24px;
@@ -2011,6 +2056,7 @@ input[type="radio"].visually_hidden {
 .prices__service {
   position: relative;
   width: 13.9vw;
+  min-width: 270px;
   margin: 0 0 15px 0;
   padding: 0 0 0 30px;
   font-size: 16px;
@@ -2079,7 +2125,6 @@ input[type="radio"].visually_hidden {
   margin: 138px 0 0 0;
   background-image: url("../img/bg-form.jpg");
   background-repeat: no-repeat;
-  background-position: 2.65vw 0;
 }
 @media (max-width: 1023px) and (min-width: 768px) {
   .form {
@@ -2105,8 +2150,8 @@ input[type="radio"].visually_hidden {
   justify-content: start;
   align-items: center;
   width: 34.1vw;
+  min-width: 665px;
   min-height: 315px;
-  margin: 0 1.45vw 0 0;
   background-color: #ffffff;
   box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1);
   border-radius: 5px;
@@ -2120,6 +2165,7 @@ input[type="radio"].visually_hidden {
 @media (max-width: 767px) {
   .form__wrapper {
     width: 100%;
+    min-width: 320px;
     margin: 0;
     border: none;
   }
@@ -2152,6 +2198,7 @@ input[type="radio"].visually_hidden {
   justify-content: space-between;
   align-items: center;
   width: 29vw;
+  min-width: 550px;
   min-height: 125px;
   margin: 24px 0 0 0;
 }
@@ -2164,6 +2211,7 @@ input[type="radio"].visually_hidden {
 @media (max-width: 767px) {
   .form__message {
     width: 90vw;
+    min-width: 310px;
     min-height: 191px;
     margin: 19px 0 0 0;
   }
@@ -2174,16 +2222,19 @@ input[type="radio"].visually_hidden {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  min-width: 490px;
   min-height: 49px;
 }
 @media (max-width: 767px) {
   .form__inputs-wrapper {
     flex-direction: column;
+    min-width: 310px;
     min-height: 120px;
   }
 }
 .form__input {
   width: 14.01vw;
+  min-width: 226px;
   min-height: 49px;
   font-size: 14px;
   line-height: 17px;
@@ -2218,7 +2269,7 @@ input[type="radio"].visually_hidden {
   padding: 0 0 0 15px;
 }
 .form__button-submit {
-  width: 9.2vw;
+  width: 163px;
   min-height: 51px;
   font-size: 12px;
   line-height: 14px;
